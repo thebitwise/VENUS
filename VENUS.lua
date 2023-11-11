@@ -154,7 +154,7 @@ root:toggle('Players', {'venusplayers'}, "", function(on)
 end, true)
 
 root:textslider("Aim for", {'venuson'}, '', {'Head', 'Neck', 'Jaw', 'Spine', 'Pelvis', 'Left foot'}, function(x, option)
-    pluto_switch option do 
+    switch option do 
         case "Head":
             venus_bone = 31086
             break
